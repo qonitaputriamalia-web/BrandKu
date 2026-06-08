@@ -13,6 +13,6 @@ ctaBtn.addEventListener("click", () => {
     } else if (counter == 2) {
         ctaFeedback.textContent = "lalalalalalalaa";
     } else {
-        ctaBtn.remove
+        ctaBtn.remove();
     }
 }); 
