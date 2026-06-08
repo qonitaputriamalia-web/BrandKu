@@ -13,6 +13,9 @@ function App() {
         <Hero />
         <WhyUs />
       </main>
+      <footer class="bg-slate-900 py-10 text-center font-medium text-md text-slate-400">
+        <p>&copy; 2026 BrandKu All Rights Reserved</p>
+      </footer>
     </div>
   )
 }
