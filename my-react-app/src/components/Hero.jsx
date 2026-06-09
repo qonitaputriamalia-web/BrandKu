@@ -1,5 +1,4 @@
 import "react"
-
 const Hero = () => (
 
     <section className="bg-slate-100 py-25">
