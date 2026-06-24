@@ -1,14 +1,24 @@
-import Card from "./Card";
-const CardGrid = ({ features }) => (
-    <section class="py-15">
-        <h2 class="text-2xl font-bold text-center text-slate-900 mb-12">Mengapa BrandKu</h2>
-        <div class="max-w-4xl mx-auto grid grid-cols-3 gap-10 px-6">
-            {features.map(items => (
-                <Card key={items.id} icon={items.icon} title={items.title} description={items.description} />
+import { featureData } from '../data/features';
+import Card from './Card';
 
-            ))}
-
-        </div>
+const CardGrid = () => {
+  return (
+    <section className="py-20 px-16 text-center">
+      <h2 className="text-3xl font-bold mb-16 text-slate-900">Mengapa Brandku?</h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        {featureData.map((item, index) => (
+          <Card 
+            key={index}
+            id={item.id}
+            icon={item.icon}
+            title={item.title}
+            description={item.desc}
+          />
+        ))}
+      </div>
     </section>
-)
+  );
+};
+
 export default CardGrid;
